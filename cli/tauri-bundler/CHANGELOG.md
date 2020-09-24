@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.9.4]
+
+-   Set the Windows installer (WiX) `WorkingDirectory` field to `INSTALLDIR` so the app can read paths relatively (previously resolving to `C:\Windows\System32`).
+    -   [5cf3402](https://www.github.com/tauri-apps/tauri/commit/5cf3402735ac2e88fc4aae5fe39fc0a41262b6fa) fix: add working directory to wix's shortcut ([#1021](https://www.github.com/tauri-apps/tauri/pull/1021)) on 2020-09-24
+
 ## [0.9.3]
 
 -   Improve checking for Xcode command line tools to allow builds on mac
